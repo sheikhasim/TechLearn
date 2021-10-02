@@ -128,7 +128,8 @@ table {
   border-spacing: 0;
 }
 
-* {
+html {
+  font-family: "Open Sans";
   box-sizing: border-box;
 }
 
@@ -149,14 +150,18 @@ body {
 }
 
 /* Style the top navigation bar */
-.container-fluid > .row {
-  display: flex;
+.navbar .container-fluid {
+  /* display: flex; */
   overflow: hidden;
   border-bottom: 3px groove rgb(77, 77, 236);
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   padding: 25px 0;
   /* background-color: rgba(53, 156, 224, 0.781); */
+}
+
+/* Styling the blocks */
+.container-fluid > row {
 }
 
 /* Style the topnav links */
@@ -194,7 +199,6 @@ body {
 }
 
 h1 {
-  font-family: "Open Sans";
   font-size: 1.5em;
   font-weight: bold;
   margin-right: auto;
@@ -209,11 +213,6 @@ h1 {
   margin-right: 15px;
 }
 
-/* Remove extra left and right margins, due to padding */
-/* .row {
-  margin: 20px 15px;
-} */
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -221,34 +220,35 @@ h1 {
   clear: both;
 }
 
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
+.card > img {
+  justify-content: center;
+  align-items: center;
 }
 
 /* Style the counter cards */
 .card {
+  display: flex;
   box-shadow: white 5px;
   padding: 20px 10px;
   text-align: center;
+  margin: 1em;
+
   background-color: #f1f1f1;
   border-radius: 20px;
   border: 1px solid blue;
   box-shadow: 0px 5px 10px white;
+  transition: translate 0.15s ease-in-out 0.05s;
 }
 
-.card:active and .card:hover{
-
+.card:hover {
+  background-color: aquamarine;
+  transform: translate(-0.5em, -0.2em);
 }
 
 #grid1 {
   margin-top: 60px;
 }
-#b1 {
+.b1 {
   margin-right: 20px;
 }
 .logo {
