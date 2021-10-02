@@ -1,35 +1,162 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 * {
   box-sizing: border-box;
 }
 
-body{
-      
-           background-color:black;
-           background-position: center;
-           background-repeat: repeat-y;
-           background-attachment: fixed;
-           margin: 0;
-
-
-   }
+body {
+  background-color: rgba(53, 156, 224, 0.781);
+  background-position: center;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  margin: 0;
+}
 
 /* Style the header */
 .header {
   padding: 20px;
   text-align: center;
   justify-content: center;
-color: white;
+  color: white;
 }
 
 /* Style the top navigation bar */
-.topnav {
+.container-fluid > .row {
   display: flex;
   overflow: hidden;
-  border-bottom: 3px groove  blue;
+  border-bottom: 3px groove rgb(77, 77, 236);
   justify-content: center;
   align-items: center;
   padding: 25px 0;
-  background-color: black;
+  /* background-color: rgba(53, 156, 224, 0.781); */
 }
 
 /* Style the topnav links */
@@ -42,34 +169,35 @@ color: white;
   text-decoration: none;
   font-weight: bolder;
   font-size: 20px;
-  text-shadow:  2px 2px grey;
+  text-shadow: 2px 2px grey;
 }
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color:lightgrey;
+  background-color: lightgrey;
   color: black;
-
 }
 
-
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .column {
     width: 100%;
   }
 }
-#b1{
-   float: left;
+#b1 {
+  float: left;
   display: block;
   text-align: center;
   text-decoration: none;
-  margin-left: auto;  
+  margin-left: auto;
   text-decoration: none;
-
 }
 
-h1{margin-right: auto;
+h1 {
+  font-family: "Open Sans";
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: auto;
   color: white;
 }
 /* Float four columns side by side */
@@ -82,9 +210,9 @@ h1{margin-right: auto;
 }
 
 /* Remove extra left and right margins, due to padding */
-.row {
+/* .row {
   margin: 20px 15px;
-}
+} */
 
 /* Clear floats after the columns */
 .row:after {
@@ -111,24 +239,28 @@ h1{margin-right: auto;
   border-radius: 20px;
   border: 1px solid blue;
   box-shadow: 0px 5px 10px white;
+}
+
+.card:active and .card:hover{
 
 }
-#grid1{
-  margin-top:60px;
+
+#grid1 {
+  margin-top: 60px;
 }
-#b1{
+#b1 {
   margin-right: 20px;
 }
-.logo{
+.logo {
   height: 100px;
   width: 100px;
   border-radius: 50%;
 }
-.a1{
+.a1 {
   border: 1px solid blue;
   margin-right: 10px;
 }
-h2{
+h2 {
   text-align: center;
   color: white;
   font-weight: bolder;
