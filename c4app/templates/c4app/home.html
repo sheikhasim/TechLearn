@@ -7,7 +7,7 @@
     <met name="viewport" content="width=device-width,initial-scale=1">
       <title>codefury.com</title>
   <link rel="stylesheet" href="{% static 'css/home.css'%}">
-  
+
 </head>
 <body>
 
@@ -17,12 +17,13 @@
   <a href="blog">BLOG</a>
   <div id="b1">
    <a href="reg" class="a1">REGISTRATION</a>
-   
+
     {%if user.is_authenticated %}
       <a href="logout">Logout</a>
     {% else %}
           <br>
     <a href="user_login">Login</a>
+    <!--<a href= "google-OAuth2" %}">Google</a>-->
 
        {% endif %}
      </div>
@@ -49,7 +50,7 @@
     <p>For Beginers</p>
     </div>
   </div>
-  
+
   <div class="column">
     <div class="card">
         <img src="{% static 'images/c2.png'%}"  class="logo">
@@ -57,7 +58,7 @@
       <p>Advance</p>
     </div>
   </div>
-  
+
   <div class="column">
     <div class="card">
      <img src="{% static 'images/j2.png'%}"  class="logo">
@@ -83,7 +84,7 @@
       <p>Web Deisgn</p>
     </div>
   </div>
-  
+
   <div class="column">
     <div class="card">
         <img src="{% static 'images/p2.jpg'%}"  class="logo">
@@ -91,13 +92,13 @@
       <p>For Data science</p>
     </div>
   </div>
-  
+
   <div class="column">
     <div class="card">
         <img src=src="{% static 'images/c2.png'%}"  class="logo">
       <h3>C++</h3>
       <p>1M learner</p>
-    
+
   </div>
 </div>
 </div>

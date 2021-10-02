@@ -2,6 +2,7 @@ from django.urls import path
 from django.urls import include
 from c4app import views
 from django.contrib.auth import views as auth_views
+from django.views.generic import TemplateView
 
 app_name='c4app'
 
@@ -22,5 +23,7 @@ urlpatterns=[
 
  path('reset_password_complete/',
        auth_views.PasswordResetCompleteView.as_view(template_name="c4app/password_reset_done"),name ="password_reset_complete"),
+ path('accounts/',include('allauth.urls')),
 
+ 
 ]

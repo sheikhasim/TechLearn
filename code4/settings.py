@@ -36,12 +36,17 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
+    'django.contrib.sites',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'c4app',
-    
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
+
 ]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
@@ -70,6 +75,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.request',
             ],
         },
     },
@@ -146,3 +152,14 @@ EMAIL_PORT=587
 EMAIL_USE_TLS=True
 EMAIL_HOST_USER="sheikhasim411@gmail.com"
 EMAIL_HOST_PASSWORD="play4m33"
+
+AUTHETICATION_BACKENDS={
+ 'django.contrib.auth.backends.ModelBackend ',
+ 'allauth.account.auth_backends.AUTHETICATIONBACKEND'
+ 'social_core.backends.google.GoogleOAuth2'
+}
+
+SITE_ID=1
+
+SOCIAL_AUTH_GOOGLE_OAuth2_KEY="100266884944-e7r586bv6dqu33fn0ombop24r3rcg1vv.apps.googleusercontent.com"
+SOCIAL_AUTH_GOOGLE_OAuth2_SECRET="e3fAHsDUC9G4jHR9ilzDpwPL"
