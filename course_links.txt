@@ -1,0 +1,53 @@
+PHP tutorial for beginners:
+    https://youtube.com/playlist?list=PL4cUxeGkcC9gksOX3Kd9KPo-O68ncT05o
+
+Php tutorial:
+    https://youtube.com/playlist?list=PLS1QulWo1RIZc4GM_E04HCPEd_xpcaQgg
+
+Learn c language free:
+    https://www.computer-pdf.com/programming/c-cpp/876-tutorial-learning-c-language.html
+
+C Language Tutorial pdf
+    https://phy.ntnu.edu.tw/~cchen/ctutor.pdf
+
+C programming youtubee playlist:
+    https://youtube.com/playlist?list=PLBlnK6fEyqRhX6r2uhhlubuF5QextdCSM
+
+C programming wikipedia link:
+    https://en.wikipedia.org/wiki/C_(programming_language)
+
+C++ wikipedia link:
+    https://en.wikipedia.org/wiki/C%2B%2B
+
+C++ basics:
+    https://www.cs.fsu.edu/~cop3014p/lectures/ch2/index.html
+
+C++ tutorial youtube:
+    https://youtube.com/playlist?list=PLmpc3xvYSk4wDCP5zjt2QQXe8-JGHa4Kt
+
+Learning Java with Brandon Jones   
+    https://youtube.com/playlist?list=PL73qvSDlAVVjmeAzZWEjkY73aupv2l2Y7
+
+Java programming lecture notes:
+    https://mrcet.com/downloads/digital_notes/CSE/II%20Year/JAVA%20PROGRAMMING_19.11.2018.pdf
+
+Java learning download:
+    https://www.computer-pdf.com/programming/java/882-tutorial-learning-java-language.html
+
+HTML Learning Download:
+    html  https://www.computer-pdf.com/web-programming/html/893-tutorial-learning-html.html
+
+HTML Documentation
+    https://www.cs.uct.ac.za/mit_notes/web_programming.html
+
+HTML handbook:
+    https://frontendmasters.com/books/front-end-handbook/2019/
+
+Python tutorial Playlist:
+    https://youtube.com/playlist?list=PLQVvvaa0QuDe8XSftW-RAxdo6OmaeL85M
+
+Javascript Tutorial Playlist:
+    https://youtube.com/playlist?list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV
+
+Javascript handbook:
+    http://edu-9.de/uploads/books/javascript-handbook.pdf
