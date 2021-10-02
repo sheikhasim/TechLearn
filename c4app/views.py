@@ -75,3 +75,7 @@ def user_login(request):
               return HttpResponse ("invalid login details supplied!")
       else:
           return render(request,'c4app/login.html',{})
+        
+@login_required
+def c_course(request):
+    return render(request, 'c4app/c.html')
