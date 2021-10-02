@@ -3,6 +3,8 @@ from django.contrib.auth.forms import UserCreationForm
 from c4app.forms import UserForm,UserProfileInfoForm
 # Create your views here.
 from .models import *
+import razorpay
+from code4.settings import RAZORPAY_API_KEY,RAZORPAY_API_SECRET_KEY
 
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
@@ -75,3 +77,37 @@ def user_login(request):
               return HttpResponse ("invalid login details supplied!")
       else:
           return render(request,'c4app/login.html',{})
+
+
+
+
+client=razorpay.Client(auth=(RAZORPAY_API_KEY,RAZORPAY_API_SECRET_KEY))
+def pay(request):
+    order_amount=15000
+    order_currency='INR'
+    notes={'thank':"Goodluck champ"}
+
+    payment_order=client.order.create(dict(amount=order_amount,currency=order_currency,notes=notes,payment_capture=1))
+    payment_order_id=payment_order['id']
+    context={
+       'amount':1500 ,'api_key':RAZORPAY_API_KEY,'order_id':payment_order_id
+    }
+    return render(request,'c4app/pay.html',context)
+
+
+#def checkout(request):
+ #if request.method=="POST":
+#    items_json=request.POST.get('itemsJson', '')
+#    name=request.POST.get('name','')
+#    amount=request.POST.get('amount','')
+#    email=request.POST.get('email','')
+#    phone=request.POST.get('phone','')
+#    city=request.POST.get('city','')
+#    state=request.POST.get('state','')
+#    order=Orders(items_json=items_json,amount=amount,name=name,email=email,phone=phone,city=city,state=state,)
+#    update=OrderUpdate(order_id=order.order_id,update_desc="The order has been placed")
+#    update.save()
+#    thank=True
+#    id=order.order_id
+#    return render(request,'c4app/checkout.html',{'thank':thank,'id':id})
+ #return render(request,c4app/checkout.html)

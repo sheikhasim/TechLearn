@@ -24,6 +24,7 @@ urlpatterns=[
  path('reset_password_complete/',
        auth_views.PasswordResetCompleteView.as_view(template_name="c4app/password_reset_done"),name ="password_reset_complete"),
  path('accounts/',include('allauth.urls')),
+ #path('pay/',views.pay,name='pay'),
 
- 
+
 ]
