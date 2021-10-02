@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <<<<<<< HEAD <nav class="topnav navbar navbar-expand-lg navbar-light">
+  <nav class="topnav navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <a href="https://educnct.herokuapp.com/" class="navbar-brand">
         <p class="display-4"> Edu Connect</p>
@@ -41,29 +41,12 @@
             <a class="nav-link active" aria-current="page" href="reg" class="a1">REGISTRATION</a>
           </li>
           <li>
-            =======
-
-            <div class="container-fluid ">
-              <div class="row">
-                <div class="col-4">
-                  <a href="https://educnct.herokuapp.com/" class="navbar-brand">
-                    <h1 class="display-4"> Edu Connect</h1>
-                  </a>
-                </div>
-                <div class="col-8">
-                  <nav class="topnav navbar navbar-expand-lg navbar-light">
-                    <a href="play.html">Projects</a>
-                    <a href="blog">BLOG</a>
-                    <div id="b1">
                       <a href="reg" class="a1">REGISTRATION</a>
-
-                      >>>>>>> 34330673b314e7abe51613caede1ea221e957700
                       {%if user.is_authenticated %}
                       <a class="nav-link active" aria-current="page" href="logout">Logout</a>
                       {% else %}
                       <br>
                       <a class="nav-link active" aria-current="page" href="user_login">Login</a>
-                      <!--<a href= "google-OAuth2" %}">Google</a>-->
 
                       {% endif %}
           </li>
