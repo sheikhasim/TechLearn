@@ -17,7 +17,13 @@ from django.contrib import admin
 from django.urls import path
 from django.urls import include
 
+from c4app import views
+
+app_name= 'c4app'
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('c4app.urls'))
+    path('',include('c4app.urls')),
+     path('', include('django.contrib.auth.urls')),
+     path('logout/',views.user_logout,name='logout'),
+
 ]
