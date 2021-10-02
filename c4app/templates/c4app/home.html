@@ -1,109 +1,152 @@
 <!DOCTYPE html>
 {%load static%}
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-compatible" content="IE=edge">
-    <met name="viewport" content="width=device-width,initial-scale=1">
-      <title>codefury.com</title>
-  <link rel="stylesheet" href="{% static 'css/home.css'%}">
+  <met name="viewport" content="width=device-width,initial-scale=1">
+    <title>codefury.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/home.css'%}">
+    <link rel="stylesheet" href="/static/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap"
+      rel="stylesheet">
 
 </head>
+
 <body>
+  <<<<<<< HEAD <nav class="topnav navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a href="https://educnct.herokuapp.com/" class="navbar-brand">
+        <p class="display-4"> Edu Connect</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse id b1" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
 
-<div class="topnav">
- <h1>Edu Connect</h2>
-  <a href="play.html">Projects</a>
-  <a href="blog">BLOG</a>
-  <a href="pay">Pay</a>
-  <div id="b1">
-   <a href="reg" class="a1">REGISTRATION</a>
+            <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="blog">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="reg" class="a1">REGISTRATION</a>
+          </li>
+          <li>
+            =======
 
-    {%if user.is_authenticated %}
-      <a href="logout">Logout</a>
-    {% else %}
-          <br>
-    <a href="user_login">Login</a>
-    <!--<a href= "google-OAuth2" %}">Google</a>-->
+            <div class="container-fluid ">
+              <div class="row">
+                <div class="col-4">
+                  <a href="https://educnct.herokuapp.com/" class="navbar-brand">
+                    <h1 class="display-4"> Edu Connect</h1>
+                  </a>
+                </div>
+                <div class="col-8">
+                  <nav class="topnav navbar navbar-expand-lg navbar-light">
+                    <a href="play.html">Projects</a>
+                    <a href="blog">BLOG</a>
+                    <div id="b1">
+                      <a href="reg" class="a1">REGISTRATION</a>
 
-       {% endif %}
-     </div>
+                      >>>>>>> 34330673b314e7abe51613caede1ea221e957700
+                      {%if user.is_authenticated %}
+                      <a class="nav-link active" aria-current="page" href="logout">Logout</a>
+                      {% else %}
+                      <br>
+                      <a class="nav-link active" aria-current="page" href="user_login">Login</a>
+                      <!--<a href= "google-OAuth2" %}">Google</a>-->
 
-</div>
-
-<div id="grid1">
-  <div class="row"><header><h2> WHAT WOULD YOU LIKE TO LEARN ?</h2></header>
-  </div>
-<div class="row">
-    <div class="column"></div>
-  <div class="column">
-    <div class="card">
-        <img src="{% static 'images/p1.png'%}" class="logo">
-      <h3>PHP</h3>
-          <p>frame work</p>
+                      {% endif %}
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
+    </nav>
 
-  <div class="column">
-    <div class="card">
-        <img src="{% static 'images/c1.jpg'%}" class="logo">
-      <h3>C Language</h3>
-    <p>For Beginers</p>
+    <div class="row" id="grid1">
+      <header>
+        <h2 class="display-4"> WHAT WOULD YOU LIKE TO LEARN ?</h2>
+      </header>
     </div>
-  </div>
+    <div class="container">
+      <div class="row row-cols-2 row-cols-lg-4 row-cols-md-2 align-items-center">
+        <div class="col">
+          <div class="card">
+            <img src="{% static 'images/p1.png'%}" class="logo">
+            <h3>PHP</h3>
+            <p>frame work</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="{% static 'images/c1.jpg'%}" class="logo">
+            <h3>C Language</h3>
+            <p>For Beginers</p>
+          </div>
+        </div>
 
-  <div class="column">
-    <div class="card">
-        <img src="{% static 'images/c2.png'%}"  class="logo">
-      <h3>C++</h3>
-      <p>Advance</p>
+        <div class="col">
+          <div class="card">
+            <img src="{% static 'images/c2.png'%}" class="logo">
+            <h3>C++</h3>
+            <p>Advance</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="{% static 'images/j2.png'%}" class="logo">
+            <h3>JAVA</h3>
+            <p>1M learner</p>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-2 row-cols-lg-4 row-cols-md-2 align-items-center">
+        <div class="col">
+          <div class="card">
+            <img src="{% static 'images/h1.png'%}" class="logo">
+            <h3>HTML</h3>
+            <p>Web Design</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="{% static 'images/j1.jpg'%}" class="logo">
+            <h3>JAVA SCRIPT</h3>
+            <p>Web Deisgn</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="{% static 'images/p2.jpg'%}" class="logo">
+            <h3>PYTHON</h3>
+            <p>For Data science</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="{% static 'images/c2.png'%}" class="logo">
+            <h3>C++</h3>
+            <p>1M learner</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-     <img src="{% static 'images/j2.png'%}"  class="logo">
-     <h3>JAVA</h3>
-      <p>1M learner</p>
-    </div>
-</div>
-</div>
-<div class="row">
-    <div class="column"></div>
-  <div class="column">
-    <div class="card">
-      <img src="{% static 'images/h1.png'%}"  class="logo">
-       <h3>HTML</h3>
-          <p>Web Design</p>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-        <img src="{% static 'images/j1.jpg'%}" class="logo">
-      <h3>JAVA SCRIPT</h3>
-      <p>Web Deisgn</p>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-        <img src="{% static 'images/p2.jpg'%}"  class="logo">
-      <h3>PYTHON</h3>
-      <p>For Data science</p>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-        <img src=src="{% static 'images/a1.png'%}"  class="logo">
-      <h3>Android</h3>
-      <p>1M learner</p>
-
-  </div>
-</div>
-</div>
-
-</div></div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+      integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>
