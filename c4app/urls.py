@@ -19,6 +19,7 @@ urlpatterns=[
  path('python_course/',views.python_course,name='python_course'),
  path('android_course/',views.android_course,name='android_course'),
  path('', include('django.contrib.auth.urls')),
+ path('play/',views.play,name='play'),
 
  path('reset_password/',
  auth_views.PasswordResetView.as_view(template_name="c4app/password_reset.html"), name="reset_password"),

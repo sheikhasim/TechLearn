@@ -16,7 +16,8 @@ from django.contrib.auth import authenticate,login,logout
 def home(request):
     return render (request,'c4app/home.html')
 
-
+def play(request):
+    return render(request,'c4app/play.html')
 @login_required
 def user_logout(request):
     logout(request)
