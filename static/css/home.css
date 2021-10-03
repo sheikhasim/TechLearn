@@ -226,7 +226,7 @@ h1 {
   display: flex;
   justify-content: end;
   align-items: flex-end;
-  margin: 0;
+  margin-left: auto;
 }
 
 .navbar-nav {
