@@ -127,10 +127,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-html {
-  font-family: "Open Sans";
+* {
   box-sizing: border-box;
+}
+html {
+  font-family: "Open Sans", sans-serif, cursive;
 }
 
 body {
@@ -158,10 +159,6 @@ body {
   align-items: center;
   padding: 25px 0;
   /* background-color: rgba(53, 156, 224, 0.781); */
-}
-
-/* Styling the blocks */
-.container-fluid > row {
 }
 
 /* Style the topnav links */
@@ -220,9 +217,23 @@ h1 {
   clear: both;
 }
 
-.card > img {
+.card {
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+.nabar-collapse {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  margin: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  margin-left: 0.5em;
 }
 
 /* Style the counter cards */

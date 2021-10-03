@@ -1,35 +1,47 @@
-
-
 <!DOCTYPE html>
 {%load static %}
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-      <link rel="stylesheet" href="{% static 'css/home.css' %}">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-    <!---Login page   -->
 
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/login.css' %}">
+  <link rel="stylesheet" href="/static/css/login.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,100;1,300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!---Login page   -->
+  <div class="container">
     <div class="jumbotron bg-blue">
-      <h1>Please Login</h1>
+      <h1 class="display-3">Please Login</h1>
+      <div class="login">
+        <form action="{url % c4app:user_login' %}" method="post">
+          {% csrf_token %}
+          <label for="username">Username : </label>
+          <input type="text" name="username" value="" placeholder="username">
+          <br>
+          <br>
+          <label for="password">Password</label>
+          <input type="password" name="password" placeholder="password">
+          <br>
 
-      <form  action="{url % c4app:user_login' %}" method="post">
-        {% csrf_token %}
-        <label for="username">username:</label>
-        <input type="text" name="username" value="">
-   <br>
-   <br>
-        <label for="password">Password</label>
-        <input type="password" name="password">
-<br>
+          <br>
+          <input type="submit" class="btn btn-primary" name="" value="Login">
 
-<br>
-      <input type="submit" class="btn btn-primary" name="" value="Login">
+        </form>
+      </div>
+      <br>
+      <a class="forgot" href="{% url 'c4app:reset_password' %}">Forgot password?</a>
 
-      </form>
-    <a href="{% url 'c4app:reset_password' %}">Forgot password?</a>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
