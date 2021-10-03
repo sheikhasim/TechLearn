@@ -60,14 +60,14 @@ def user_login(request):
 
       if request.method=='POST':
           username = request.POST.get('username')
-          password= request.POST.get(password)
+          password= request.POST.get('password')
 
           user = authenticate(username=username,password=password)
 
           if user:
               if user.is_active:
                   login(request,user)
-                  return HttpResponseRedirect(reverse('home.html'))
+                  return render(request,'c4app/home.html')
 
               else :
                   return HttpResponse("NOT active")
@@ -78,7 +78,7 @@ def user_login(request):
       else:
           return render(request,'c4app/login.html',{})
 
-        
+
 # @login_required
 def php_course(request):
     return render(request, 'c4app/php_c.html')
@@ -146,4 +146,3 @@ def pay(request):
 #    id=order.order_id
 #    return render(request,'c4app/checkout.html',{'thank':thank,'id':id})
  #return render(request,c4app/checkout.html)
-

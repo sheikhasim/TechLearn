@@ -8,6 +8,7 @@ app_name='c4app'
 
 urlpatterns=[
  path('',views.home,name='home'),
+ path('user_login/',views.user_login,name='login'),
  path('reg/',views.register,name='reg'),
  path('php_course/',views.php_course,name='php_course'),
  path('c_course/',views.c_course,name='c_course'),

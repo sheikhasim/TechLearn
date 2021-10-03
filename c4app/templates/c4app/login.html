@@ -22,7 +22,7 @@
     <div class="jumbotron bg-blue">
       <h1 class="display-3">Please Login</h1>
       <div class="login">
-        <form action="{url % c4app:user_login' %}" method="post">
+        <form  method="post">
           {% csrf_token %}
           <label for="username">Username : </label>
           <input type="text" name="username" value="" placeholder="username">

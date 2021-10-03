@@ -25,6 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('c4app.urls')),
      path('', include('django.contrib.auth.urls')),
+     path('user_login/',views.user_login,name='login'),
      path('logout/',views.user_logout,name='logout'),
      path('pay/',views.pay,name='pay')
 
