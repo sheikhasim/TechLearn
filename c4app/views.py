@@ -17,8 +17,7 @@ def home(request):
     return render (request,'c4app/home.html')
 def python_c(request):
     return render(request,'c4app/python_c.html')
-def js_c(request):
-    return render(request,'c4app/js_c.html)
+
 def java_c(request):
       return render(request,'c4app/java_c.html)                    
     
