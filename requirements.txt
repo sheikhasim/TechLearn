@@ -22,3 +22,4 @@ urllib3==1.26.6
 whitenoise==5.3.0
 wincertstore==0.2
 django-allauth==0.43.0
+razorpay==1.2.0

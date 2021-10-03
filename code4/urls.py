@@ -26,6 +26,7 @@ urlpatterns = [
     path('',include('c4app.urls')),
      path('', include('django.contrib.auth.urls')),
      path('logout/',views.user_logout,name='logout'),
-      
+     path('pay/',views.pay,name='pay')
+
 
 ]
