@@ -19,7 +19,7 @@ def python_c(request):
     return render(request,'c4app/python_c.html')
 
 def java_c(request):
-      return render(request,'c4app/java_c.html)                    
+      return render(request,'c4app/java_c.html')                    
     
 def play(request):
     return render(request,'c4app/play.html')
