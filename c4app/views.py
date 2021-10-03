@@ -78,6 +78,41 @@ def user_login(request):
       else:
           return render(request,'c4app/login.html',{})
 
+        
+# @login_required
+def php_course(request):
+    return render(request, 'c4app/php_c.html')
+
+# @login_required
+def c_course(request):
+    return render(request, 'c4app/c_c.html')
+
+# @login_required
+def cpp_course(request):
+    return render(request, 'c4app/cpp_c.html')
+
+# @login_required
+def java_course(request):
+    return render(request, 'c4app/java_c.html')
+
+# @login_required
+def html_course(request):
+    return render(request, 'c4app/html_c.html')
+
+# @login_required
+def js_course(request):
+    return render(request, 'c4app/js_c.html')
+
+# @login_required
+def python_course(request):
+    return render(request, 'c4app/python_c.html')
+
+# @login_required
+def android_course(request):
+    return render(request, 'c4app/android_c.html')
+
+
+
 
 
 
@@ -111,3 +146,4 @@ def pay(request):
 #    id=order.order_id
 #    return render(request,'c4app/checkout.html',{'thank':thank,'id':id})
  #return render(request,c4app/checkout.html)
+

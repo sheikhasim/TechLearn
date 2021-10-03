@@ -9,7 +9,14 @@ app_name='c4app'
 urlpatterns=[
  path('',views.home,name='home'),
  path('reg/',views.register,name='reg'),
- path('user_login/',views.user_login,name='user_login'),
+ path('php_course/',views.php_course,name='php_course'),
+ path('c_course/',views.c_course,name='c_course'),
+ path('cpp_course/',views.cpp_course,name='cpp_course'),
+ path('java_course/',views.java_course,name='java_course'),
+ path('html_course/',views.html_course,name='html_course'),
+ path('js_course/',views.js_course,name='js_course'),
+ path('python_course/',views.python_course,name='python_course'),
+ path('android_course/',views.android_course,name='android_course'),
  path('', include('django.contrib.auth.urls')),
 
  path('reset_password/',

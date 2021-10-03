@@ -256,8 +256,16 @@ h1 {
   transform: translate(-0.5em, -0.2em);
 }
 
+.card a{
+  text-decoration:none;
+}
+#grid1{
+  margin-top:60px;
+
+
 #grid1 {
   margin-top: 60px;
+
 }
 .b1 {
   margin-right: 20px;
