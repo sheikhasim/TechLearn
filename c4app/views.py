@@ -17,9 +17,21 @@ def home(request):
     return render (request,'c4app/home.html')
 def python_c(request):
     return render(request,'c4app/python_c.html')
-
+def php_c(request):
+    return render(request,'c4app/php_c.html')
+def c_c(request):
+    return render(request,'c4app/c_c.html')
+def cpp_c(request):
+    return render(request,'c4app/cpp_c.html')
+def android_c(request):
+    return render(request,'c4app/android_c.html')
 def java_c(request):
-      return render(request,'c4app/java_c.html')                    
+      return render(request,'c4app/java_c.html')
+def js_c(request):
+    return render(request,'c4app/js_c.html')
+def html_c(request):
+    return render(request,'c4app/html_c.html')
+
     
 def play(request):
     return render(request,'c4app/play.html')
