@@ -17,7 +17,7 @@ urlpatterns=[
  path('html_c/',views.html_course,name='html_course'),
  path('js_c/',views.js_course,name='js_course'),
  path('python_c/',views.python_course,name='python_course'),
- path('android_course/',views.android_course,name='android_course'),
+
  path('', include('django.contrib.auth.urls')),
  path('play/',views.play,name='play'),
 
